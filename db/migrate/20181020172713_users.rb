@@ -6,4 +6,8 @@ class Users < ActiveRecord::Migration
       t.string :password
     end
   end
+
+  def down
+    drop_table :users
+  end
 end
